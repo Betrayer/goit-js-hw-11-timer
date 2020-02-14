@@ -4,7 +4,7 @@ class CountdownTimer {
   constructor({ selector, targetDate }) {
     this.selector = selector;
     this.targetDate = targetDate;
-    this.myFunction();
+    // this.myFunction();
   }
   myFunction() {
     this.timer = setInterval(() => {
@@ -32,7 +32,9 @@ class CountdownTimer {
   }
 }
 
-new CountdownTimer({
+const temp = new CountdownTimer({
   selector: "#timer-1",
   targetDate: new Date("Jul 17, 2021")
 });
+
+temp.myFunction();
